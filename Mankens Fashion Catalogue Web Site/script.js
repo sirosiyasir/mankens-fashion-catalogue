@@ -12,8 +12,10 @@ $(window).resize(function() {
   }
 });
 
-
-
+// NAVBAR BRAND
+$(".brand").click(function() {
+  window.location.reload();
+})
 
 // LANGUAGES TRANSLATION
 
