@@ -48,6 +48,13 @@ h6 {
   display: block;
 }
 
+button,
+h1,
+.woman-img,
+.brand {
+  margin-left: 40px;
+}
+
 
 /* #FFF8EA COLOUR */
 body,
@@ -82,7 +89,7 @@ h6,
 
 /* CLASSES */
 .about-us-title {
-  margin-top: 50px;
+  margin-top: 0;
   margin-bottom: 100px;
   text-shadow: 0px 0px 12px black;
   font-size: 3rem;
@@ -110,12 +117,22 @@ h6,
   margin-top: 40px;
 }
 
+.contact-title,
+.location-title {
+  margin-bottom: 100px;
+  text-shadow: 0px 0px 12px black;
+  font-size: 3rem;
+  width: 300px;
+  display: block;
+}
+
 .copyright {
   display: block;
   margin-top: 100px;
   color: #000;
 }
 
+/* LANGUAGES */
 .english,
 .arabic,
 .turkish {
@@ -127,6 +144,7 @@ h6,
   margin-left: 20px;
 }
 
+/* AREAS */
 .fourth-area,
 .second-area,
 .third-area {
@@ -141,13 +159,19 @@ h6,
   padding: 0 15% 3%;
 }
 
-.languages {
-  position: absolute;
-  top: 10px;
+.gallery-btn,
+.telegram-btn {
+  margin-top: 100px;
+}
+.gallery,
+.telegram {
+  text-decoration: none;
+  color: white;
 }
 
-.turkish {
-  margin-left: 40px;
+.gallery:hover,
+.telegram:hover {
+  color: white;
 }
 
 .header-horizon {
@@ -167,25 +191,16 @@ h6,
   display: block;
 }
 
+.languages {
+  position: absolute;
+  top: 10px;
+}
+
 .map {
   box-shadow: 0 0 20px #B83B5E;
   display: block;
   border-radius: 1.5rem;
   width: 45rem;
-}
-
-.contact-title,
-.location-title {
-  margin-bottom: 100px;
-  text-shadow: 0px 0px 12px black;
-  font-size: 3rem;
-  width: 300px;
-  display: block;
-}
-
-.telegram-btn,
-.gallery-btn {
-  margin-top: 100px;
 }
 
 .our-products-title {
@@ -205,36 +220,17 @@ h6,
   margin-bottom: 200px;
 }
 
-.transform {
-  transform: rotate(15deg);
-  position: absolute;
+.social-media {
+  text-align: center;
+  display: block;
 }
 
-button,
-h1,
-.woman-img,
-.brand {
+.social-media-logo {
+  margin-left: 100px;
+}
+
+.turkish {
   margin-left: 40px;
-}
-
-.ponchos,
-.coats,
-.dresses,
-.suits,
-.coats,
-.jackets {
-  display: inline;
-}
-
-.gallery,
-.telegram {
-  text-decoration: none;
-  color: white;
-}
-
-.gallery:hover,
-.telegram:hover {
-  color: white;
 }
 
 .visit-title {
@@ -257,20 +253,6 @@ h1,
   }
 }
 
-.social-media {
-  text-align: center;
-  display: block;
-}
-
-.social-media-logo {
-  margin-left: 100px;
-}
-
-.previous-icon,
-.next-icon {
-  background-color: #D0B8A8;
-}
-
 /* OTHER DESIGN OPTIONS for COMPUTER SIZE */
 /* .second-woman-img {
   width: 400px;
@@ -287,6 +269,11 @@ h1,
   border-radius: 1.5rem;
   box-shadow: 0px 0px 20px #B83B5E;
 } */
+/* .transform {
+  transform: rotate(15deg);
+  position: absolute;
+} */
+
 /* Mobile Responsive */
 @media screen and (max-width: 1028px) {
   button {
@@ -301,8 +288,9 @@ h1,
     font-size: 2.3rem;
   }
 
-  .third-area {
-    padding: 3% 15% 13%;
+  .about-us-title {
+    font-size: 6rem;
+    width: 430px;
   }
 
   .gallery-btn {
@@ -314,21 +302,8 @@ h1,
     font-size: 1.8rem;
   }
 
-  /* .first-woman-img,
-  .second-woman-img {
-    display: none;
-  } */
-  .visit-title-text {
-    font-size: 8rem;
-  }
-
   .location-title,
   .our-products-title {
-    font-size: 6rem;
-    width: 430px;
-  }
-
-  .about-us-title {
     font-size: 6rem;
     width: 430px;
   }
@@ -338,4 +313,18 @@ h1,
     right: 60px;
     z-index: 10;
   }
+
+  .third-area {
+    padding: 3% 15% 13%;
+  }
+
+  /* .first-woman-img,
+  .second-woman-img {
+    display: none;
+  } */
+
+  .visit-title-text {
+    font-size: 8rem;
+  }
+
 }
